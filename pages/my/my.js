@@ -55,7 +55,7 @@ Page({
   },
   goToPlugin() {
     wx.navigateTo({
-      url: '/pages/plugin/plugin'
+      url: '/pages/plugin/plugin?showHalfMiniPage=weather'
     })
   }
 })

@@ -56,6 +56,7 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
+  "embeddedAppIdList": ["wxece3a9a4c82f58c9"],
   "usingComponents": {
     "vButton": "/miniprogram_npm/vant-weapp/button/index",
     "vToast": "/miniprogram_npm/vant-weapp/toast/index",

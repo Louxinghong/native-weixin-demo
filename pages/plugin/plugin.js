@@ -23,6 +23,26 @@ Page({
         url: '/pages/luck-draw/luck-draw',
         title: 'LuckDraw'
       }
-    ]
+    ],
+    showHalfMiniPage: ''
+  },
+  onLoad(options) {
+    this.setData({
+      showHalfMiniPage: options.showHalfMiniInNextPage
+    })
+  },
+  onPay() {
+    wx.navigateTo({
+      url: '/pages/wether/wether'
+    })
+    // '/pages/wether/wether'.includes(options.showHalfMiniInNextPage) &&
+    //   wx.openEmbeddedMiniProgram({
+    //     appId: 'wxe5f52902cf4de896'
+    //     // path: 'pages/cnode/cnode'
+    //   })
+    wx.openEmbeddedMiniProgram({
+      appId: 'wxece3a9a4c82f58c9',
+      path: 'commercialize/pages/taoke-guide/index?scene=22da6be111ad489d9ed2322f4a76a44e'
+    })
   }
 })
