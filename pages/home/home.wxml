@@ -22,23 +22,23 @@
       </block>
     </swiper>
     <view class="loan-content">
-      <vNoticeBar
+      <van-notice-bar
         class="notice"
         left-icon="info"
         text="重要的通知重要的通知重要的通知重要的通知重要的通知重要的通知重要的通知重要的通知"
-      ></vNoticeBar>
+      ></van-notice-bar>
       <span class="most-loan-word">最高可借(元)</span>
       <span class="most-money">500000</span>
-      <vDivider
+      <van-divider
         class="line"
         contentPosition="center"
         customStyle="color: rgb(136, 136, 136);border-color: rgb(136, 136, 136);font-size: 30rpx;"
-        >我要借款</vDivider
+        >我要借款</van-divider
       >
       <input class="money" type="text" placeholder="请输入金额" />
       <button class="loan-btn" type="warn" bindtap="goToLoan">借款</button>
-      <!--此处添加vToast相当于一个占位符-->
-      <vToast id="van-toast"></vToast>
+      <!--此处添加van-toast相当于一个占位符-->
+      <van-toast id="van-toast"></van-toast>
     </view>
     <view class="other-list">
       <view class="other-list-item">

@@ -11,39 +11,43 @@
   
   <view class="demoInfo {{ moveY < 0 ? 'demoInfo-down' : 'demoInfo-up' }}">
     <view class="title">
-      <vButton type="info" wx:if="{{ !hasUserInfo && canIUse }}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">戳一下</vButton>
+      <van-button type="info" wx:if="{{ !hasUserInfo && canIUse }}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">戳一下</van-button>
       <text class="author">Created By Xiaohong</text>
     </view>
   </view>-->
   <view class="information">
     <view class="location">
       <view wx:if="{{ hasLocationInfo }}">
-        <vIcon name="location-o"></vIcon>
+        <van-icon name="location-o"></van-icon>
         <text>{{ locationInfo.nation }}</text>
         <text>{{ locationInfo.province }}</text>
         <text>{{ locationInfo.city }}</text>
         <text>{{ locationInfo.district }}</text>
       </view>
       <view wx:else>
-        <vIcon name="location-o"></vIcon>
+        <van-icon name="location-o"></van-icon>
         <text>无法获取当前地理位置，请前往授权中心</text>
       </view>
 
-      <vIcon class="setting" name="setting-o" bind:tap="onShowActions"></vIcon>
-      <vActionSheet
+      <van-icon
+        class="setting"
+        name="setting-o"
+        bind:tap="onShowActions"
+      ></van-icon>
+      <van-action-sheet
         show="{{ showActions }}"
         actions="{{ actions }}"
         bind:close="onCloseActions"
         bind:select="onSelectActions"
-      ></vActionSheet>
+      ></van-action-sheet>
     </view>
 
-    <!--<vButton type="primary" bindtap="chooseLoaction">获取当前位置</vButton>-->
+    <!--<van-button type="primary" bindtap="chooseLoaction">获取当前位置</van-button>-->
     <!--<text bindtap="lookGet">授权中心</text>-->
-    <!--此处添加vToast相当于一个占位符-->
-    <vToast id="van-toast"></vToast>
+    <!--此处添加van-toast相当于一个占位符-->
+    <van-toast id="van-toast"></van-toast>
 
-    <vSearch
+    <van-search
       label="城市"
       value="{{ searchCity }}"
       placeholder="请输入需查询的城市名称"
@@ -51,10 +55,10 @@
       bind:change="onChangeCity"
     >
       <view slot="action" bind:tap="onSearchCity">搜索</view>
-    </vSearch>
+    </van-search>
 
     <view class="loading" wx:if="{{ loading }}">
-      <vLoading color="#1989fa" size="100rpx"></vLoading>
+      <van-loading color="#1989fa" size="100rpx"></van-loading>
     </view>
 
     <view
@@ -76,7 +80,7 @@
             class="wether-now-image"
             src="../../images/{{ item.wea_img }}.png"
           ></image>
-          <vTag round size="large">{{ item.wea }}</vTag>
+          <van-tag round size="large">{{ item.wea }}</van-tag>
         </view>
         <view class="date-tem">
           <text>{{ item.week }}</text>
@@ -85,10 +89,10 @@
           <text>晚上：{{ item.tem2 }}</text>
         </view>
 
-        <vDivider
+        <van-divider
           contentPosition="center"
           customStyle="color: rgb(136, 136, 136);border-color: rgb(136, 136, 136);font-size: 30rpx;"
-          >空气</vDivider
+          >空气</van-divider
         >
 
         <view class="quality" wx:if="{{ item.air > 0 }}">
@@ -97,32 +101,34 @@
             class="quality-content"
             wx:if="{{ item.air > 0 && item.air <= 50 }}"
           >
-            <vTag color="green" size="large">{{ item.air_level }}</vTag>
+            <van-tag color="green" size="large">{{ item.air_level }}</van-tag>
           </view>
           <view
             class="quality-content"
             wx:if="{{ item.air > 50 && item.air <= 100 }}"
           >
-            <vTag plain color="yellow" size="large">{{ item.air_level }}</vTag>
+            <van-tag plain color="yellow" size="large">{{
+              item.air_level
+            }}</van-tag>
           </view>
           <view
             class="quality-content"
             wx:if="{{ item.air > 100 && item.air <= 150 }}"
           >
-            <vTag color="orange" size="large">{{ item.air_level }}</vTag>
+            <van-tag color="orange" size="large">{{ item.air_level }}</van-tag>
           </view>
           <view class="quality-content" wx:if="{{ item.air > 151 }}">
-            <vTag color="crimson" size="large">{{ item.air_level }}</vTag>
+            <van-tag color="crimson" size="large">{{ item.air_level }}</van-tag>
           </view>
         </view>
         <view class="quality-desc">
           <em>{{ item.air_tips }}</em>
         </view>
 
-        <vDivider
+        <van-divider
           contentPosition="center"
           customStyle="color: rgb(136, 136, 136);border-color: rgb(136, 136, 136);font-size: 30rpx;"
-          >今天</vDivider
+          >今天</van-divider
         >
 
         <view class="wether-hours">
@@ -139,7 +145,9 @@
                 <image class="hour-wea-img" src="{{ item.wea_img }}"></image>
               </view>
               <view class="hour-wea">
-                <vTag plain type="warning" size="large">{{ item.wea }}</vTag>
+                <van-tag plain type="warning" size="large">{{
+                  item.wea
+                }}</van-tag>
               </view>
               <view class="hour-win">{{ item.win }}{{ item.win_speed }}</view>
               <view class="hour-tem">{{ item.tem }}</view>
@@ -148,10 +156,10 @@
         </view>
 
         <view class="other-desc">
-          <vDivider
+          <van-divider
             contentPosition="center"
             customStyle="color: rgb(136, 136, 136);border-color: rgb(136, 136, 136);font-size: 30rpx;"
-            >指标描述</vDivider
+            >指标描述</van-divider
           >
           <view
             class="other-desc-content"
@@ -160,20 +168,20 @@
             wx:for-index="z"
             wx:key="z"
           >
-            <vPanel
+            <van-panel
               wx:if="{{ data.level !== null }}"
               title="{{ data.title }}"
               status="{{ data.level }}"
             >
               <view class="panel-content">{{ data.desc }}</view>
-            </vPanel>
+            </van-panel>
           </view>
         </view>
 
-        <vDivider
+        <van-divider
           contentPosition="center"
           customStyle="color: rgb(136, 136, 136);border-color: rgb(136, 136, 136);font-size: 30rpx;"
-          >后六天</vDivider
+          >后六天</van-divider
         >
       </view>
 

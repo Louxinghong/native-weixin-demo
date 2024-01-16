@@ -1,5 +1,5 @@
 import { insuranceProducts } from '../../api/local-data'
-import Toast from '../../miniprogram_npm/vant-weapp/toast/toast'
+import Toast from '@vant/weapp/toast/toast'
 
 Page({
   data: {

@@ -1,6 +1,6 @@
 <view>
-  <vTabs active="{{ active }}" bind:change="onChange">
-    <vTab
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab
       wx:for="{{ topicTabs }}"
       wx:for-item="item"
       wx:for-index="index"
@@ -9,9 +9,9 @@
       name="{{ item.value }}"
     >
       <view class="loading" wx:if="{{ loading }}">
-        <vLoading color="#1989fa" size="100rpx"></vLoading>
+        <van-loading color="#1989fa" size="100rpx"></van-loading>
       </view>
       {{ item.label }}
-    </vTab>
-  </vTabs>
+    </van-tab>
+  </van-tabs>
 </view>

@@ -46,8 +46,8 @@
         借款后请按时还款，否则会影响您的信用记录。
       </view>
     </view>
-    <!--此处添加vToast相当于一个占位符-->
-    <vToast id="van-toast"></vToast>
+    <!--此处添加van-toast相当于一个占位符-->
+    <van-toast id="van-toast"></van-toast>
     <view class="apply-btn" bindtap="onApply">立即申请</view>
   </view>
 </view>

@@ -1,6 +1,6 @@
 <view>
-  <vGrid gutter="{{ 10 }}" border="{{ false }}">
-    <vGridItem
+  <van-grid gutter="{{ 10 }}" border="{{ false }}">
+    <van-grid-item
       wx:for="{{ plugins }}"
       wx:for-item="item"
       wx:for-index="index"
@@ -13,8 +13,8 @@
         src="../../images/{{ item.imgName }}.png"
       ></image>
       <text class="title">{{ item.title }}</text>
-    </vGridItem>
-  </vGrid>
+    </van-grid-item>
+  </van-grid>
 
   <button bindtap="onPay">支付支付</button>
 </view>

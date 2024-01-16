@@ -36,64 +36,64 @@
       </view>
     </view>
     <view class="other-items">
-      <vCellGroup>
-        <vCell is-link>
+      <van-cell-group>
+        <van-cell is-link>
           <view slot="title">
             <view class="van-cell-text">
               <image src="../../images/gift.png"></image>
               <text class="">分享有礼</text>
             </view>
           </view>
-        </vCell>
-        <vCell is-link>
+        </van-cell>
+        <van-cell is-link>
           <view slot="title">
             <view class="van-cell-text" bindtap="goToPlugin">
               <image src="../../images/plugin.png"></image>
               <text class="">插件</text>
             </view>
           </view>
-        </vCell>
-        <vCell is-link>
+        </van-cell>
+        <van-cell is-link>
           <view slot="title">
             <view class="van-cell-text">
               <image src="../../images/feedback.png"></image>
               <text class="">意见反馈</text>
             </view>
           </view>
-        </vCell>
-        <vCell is-link>
+        </van-cell>
+        <van-cell is-link>
           <view slot="title">
             <view class="van-cell-text">
               <image src="../../images/online_service.png"></image>
               <text class="">在线客服</text>
             </view>
           </view>
-        </vCell>
-        <vCell is-link>
+        </van-cell>
+        <van-cell is-link>
           <view slot="title">
             <view class="van-cell-text">
               <image src="../../images/help.png"></image>
               <text class="">帮助中心</text>
             </view>
           </view>
-        </vCell>
-        <vCell is-link>
+        </van-cell>
+        <van-cell is-link>
           <view slot="title">
             <view class="van-cell-text" bindtap="goToSetting">
               <image src="../../images/setting.png"></image>
               <text class="">设置</text>
             </view>
           </view>
-        </vCell>
-        <vCell is-link>
+        </van-cell>
+        <van-cell is-link>
           <view slot="title">
             <view class="van-cell-text">
               <image src="../../images/error.png"></image>
               <text class="">异常信息</text>
             </view>
           </view>
-        </vCell>
-      </vCellGroup>
+        </van-cell>
+      </van-cell-group>
     </view>
   </view>
 </view>

@@ -12,18 +12,18 @@
       <view class="insurance-detail">
         <view class="insurance-word">
           <text class="insurance-name">{{ item.name }}</text>
-          <vTag round size="medium">{{ item.tag }}</vTag>
+          <van-tag round size="medium">{{ item.tag }}</van-tag>
           <view class="insurance-desc">{{ item.description }}</view>
         </view>
-        <!--此处添加vToast相当于一个占位符-->
-        <vToast id="van-toast"></vToast>
-        <vTag plain size="large" color="#f2826a" bindtap="onShowDetail"
-          >查看详情</vTag
+        <!--此处添加van-toast相当于一个占位符-->
+        <van-toast id="van-toast"></van-toast>
+        <van-tag plain size="large" color="#f2826a" bindtap="onShowDetail"
+          >查看详情</van-tag
         >
       </view>
     </view>
     <view class="loading" hidden="{{ !isShowLoading }}">
-      <vLoading color="#1989fa" size="90rpx"></vLoading>
+      <van-loading color="#1989fa" size="90rpx"></van-loading>
     </view>
   </view>
 </view>

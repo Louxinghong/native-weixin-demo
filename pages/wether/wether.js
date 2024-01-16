@@ -1,5 +1,5 @@
 import { getWether } from '../../api/wether.js'
-import Toast from '../../miniprogram_npm/vant-weapp/toast/toast'
+import Toast from '@vant/weapp/toast/toast'
 import { dictToOptions, WETHER_STATUS } from '../../api/dict.js'
 
 //index.js

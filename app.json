@@ -11,7 +11,8 @@
     "pages/cnode/cnode",
     "pages/bilibili/bilibili",
     "pages/luck-draw/luck-draw",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/accounting/accounting"
   ],
   "permission": {
     "scope.userLocation": {
@@ -54,31 +55,29 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "embeddedAppIdList": ["wxece3a9a4c82f58c9"],
   "usingComponents": {
-    "vButton": "/miniprogram_npm/vant-weapp/button/index",
-    "vToast": "/miniprogram_npm/vant-weapp/toast/index",
-    "vSearch": "/miniprogram_npm/vant-weapp/search/index",
-    "vDropdownMenu": "/miniprogram_npm/vant-weapp/dropdown-menu/index",
-    "vDropdownItem": "/miniprogram_npm/vant-weapp/dropdown-item/index",
-    "vActionSheet": "/miniprogram_npm/vant-weapp/action-sheet/index",
-    "vIcon": "/miniprogram_npm/vant-weapp/icon/index",
-    "vTag": "/miniprogram_npm/vant-weapp/tag/index",
-    "vRow": "/miniprogram_npm/vant-weapp/row/index",
-    "vCol": "/miniprogram_npm/vant-weapp/col/index",
-    "vLoading": "/miniprogram_npm/vant-weapp/loading/index",
-    "vDivider": "/miniprogram_npm/vant-weapp/divider/index",
-    "vPanel": "/miniprogram_npm/vant-weapp/panel/index",
-    "vNoticeBar": "/miniprogram_npm/vant-weapp/notice-bar/index",
-    "vCell": "/miniprogram_npm/vant-weapp/cell/index",
-    "vCellGroup": "/miniprogram_npm/vant-weapp/cell-group/index",
-    "vTab": "/miniprogram_npm/vant-weapp/tab/index",
-    "vTabs": "/miniprogram_npm/vant-weapp/tabs/index",
-    "vCollapse": "/miniprogram_npm/vant-weapp/collapse/index",
-    "vCollapseItem": "/miniprogram_npm/vant-weapp/collapse-item/index",
-    "vGrid": "/miniprogram_npm/vant-weapp/grid/index",
-    "vGridItem": "/miniprogram_npm/vant-weapp/grid-item/index"
+    "van-button": "@vant/weapp/button/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-collapse": "@vant/weapp/collapse/index",
+    "van-collapseItem": "@vant/weapp/collapse-item/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-calendar": "@vant/weapp/calendar/index"
   }
 }
