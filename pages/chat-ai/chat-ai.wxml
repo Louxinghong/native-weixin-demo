@@ -1,0 +1,35 @@
+<view class="chat-ai-container">
+  <view class="chat-list">
+    <view
+      wx:for="{{ messageList }}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:key="index"
+      class="chat-item"
+    >
+      <block wx:if="{{ item.id % 2 === 0 }}">
+        <image src="../../images/{{ item.avatar }}"> </image>
+        <van-skeleton
+          wx:if="{{ item.isLoading }}"
+          class="skeleton"
+          row="3"
+          row-width="{{ ['100%', '100%', '60%'] }}"
+        />
+        <text wx:else>{{ item.message }}</text>
+      </block>
+      <block wx:else>
+        <text>{{ item.message }}</text>
+        <image src="../../images/{{ item.avatar }}"> </image>
+      </block>
+    </view>
+  </view>
+
+  <input
+    class="send-input"
+    value="{{ sendMessage }}"
+    adjust-position="{{ true }}"
+    disabled="{{ loading }}"
+    placeholder="请输入..."
+    bind:confirm="onConfirm"
+  />
+</view>

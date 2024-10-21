@@ -1,0 +1,26 @@
+.scan-code {
+  min-height: 100vh;
+  padding: 20rpx;
+  background: #d4d4d4;
+}
+
+.link-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1%;
+  padding: 20rpx;
+  width: 98%;
+  border-radius: 10rpx;
+  background: #fff;
+}
+
+.link-content image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.camera-content {
+  width: 100%;
+  height: 100vh;
+}

@@ -1,24 +1,23 @@
 {
     "condition": {
-        "plugin": {
-            "list": []
-        },
-        "game": {
-            "list": []
-        },
-        "gamePlugin": {
-            "list": []
-        },
         "miniprogram": {
             "list": [
                 {
-                    "name": "",
-                    "pathName": "pages/accounting/accounting",
+                    "name": "pages/scan-code/scan-code",
+                    "pathName": "pages/scan-code/scan-code",
                     "query": "",
-                    "scene": null,
-                    "launchMode": "default"
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "pages/chat-ai/chat-ai",
+                    "pathName": "pages/chat-ai/chat-ai",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }
-    }
+    },
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
 }

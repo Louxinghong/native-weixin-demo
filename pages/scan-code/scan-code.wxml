@@ -1,0 +1,20 @@
+<view class="scan-code">
+  <view class="link-content" bindtap="onScanCode">
+    <image
+      mode="aspectFill"
+      lazy-load="true"
+      class="img"
+      src="../../images/order_scan.png"
+    ></image>
+    扫描二维码
+  </view>
+
+  <!-- <camera
+    class="camera-content"
+    mode="scanCode"
+    device-position="back"
+    flash="off"
+    bindscancode="onCamera"
+  >
+  </camera> -->
+</view>

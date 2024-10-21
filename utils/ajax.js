@@ -9,13 +9,14 @@ var host = ''
  * doSuccess：成功的回调函数
  * doFail：失败的回调函数
  */
-function post(url, postData) {
+function post(url, headers = {}, postData) {
   return new Promise((resolve, reject) => {
     wx.request({
       //项目的真正接口，通过字符串拼接方式实现
       url: host + url,
       header: {
-        'content-type': 'application/json;charset=UTF-8'
+        'content-type': 'application/json;charset=UTF-8',
+        ...headers
       },
       data: postData,
       method: 'POST',

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/scan-code/scan-code",
+    "pages/chat-ai/chat-ai",
     "pages/home/home",
     "pages/monetary/monetary",
     "pages/monetary-apply/monetary-apply",
@@ -25,36 +27,6 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "tabBar": {
-    "color": "#696969",
-    "selectedColor": "#FF0000",
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath": "./images/tab_home.png",
-        "selectedIconPath": "./images/tab_home_selected.png"
-      },
-      {
-        "pagePath": "pages/monetary/monetary",
-        "text": "金融",
-        "iconPath": "./images/tab_monetary.png",
-        "selectedIconPath": "./images/tab_monetary_selected.png"
-      },
-      {
-        "pagePath": "pages/insurance/insurance",
-        "text": "保险",
-        "iconPath": "./images/tab_insurance.png",
-        "selectedIconPath": "./images/tab_insurance_selected.png"
-      },
-      {
-        "pagePath": "pages/my/my",
-        "text": "我的",
-        "iconPath": "./images/tab_my.png",
-        "selectedIconPath": "./images/tab_my_selected.png"
-      }
-    ]
-  },
   "sitemapLocation": "sitemap.json",
   "embeddedAppIdList": ["wxece3a9a4c82f58c9"],
   "usingComponents": {
@@ -78,6 +50,7 @@
     "van-collapseItem": "@vant/weapp/collapse-item/index",
     "van-grid": "@vant/weapp/grid/index",
     "van-grid-item": "@vant/weapp/grid-item/index",
-    "van-calendar": "@vant/weapp/calendar/index"
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-skeleton": "@vant/weapp/skeleton/index"
   }
 }
